@@ -14,7 +14,7 @@ app.use(cookieParser());
 app.use(logger("tiny"));
 app.use(
   cors({
-    origin: [ "https://rent-your-house.netlify.app"],
+    origin: [ "https://renting-a-house.netlify.app"],
     // credentials: true,
   })
 );
