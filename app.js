@@ -14,8 +14,8 @@ app.use(cookieParser());
 app.use(logger("tiny"));
 app.use(
   cors({
-    origin: [ 'https://renting-a-house.netlify.app'],
-    credentials: true,
+    origin: [ "*"],
+    // credentials: true,
   })
 );
 app.use(express.json());
@@ -35,7 +35,7 @@ if (process.env.NODE_ENV !== "PRODUCTION") {
 }
 
 app.get("/", (req, res) => {
-  res.send("Hello world");
+  res.send("Hello back !");
 });
 
 app.post(

@@ -8,7 +8,7 @@ if(process.env.NODE_ENV !=="PRODUCTION"){
 
 
 const connectDatabase = () =>{
-    mongoose.connect(process.env.MONGODB_URL).then(()=>{
+    mongoose.connect("mongodb+srv://mohammadfawaz261:4XMPEHlvZmE84bsv@cluster0.ucfxxma.mongodb.net/RentingHouses?retryWrites=true&w=majority").then(()=>{
         console.log('MongoDb connected successfull ...');
         
 })
