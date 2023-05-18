@@ -15,7 +15,7 @@ app.use(logger("tiny"));
 app.use(
   cors({
     origin: [ "https://renting-a-house.netlify.app"],
-    // credentials: true,
+    credentials: true,
   })
 );
 app.use(express.json());
